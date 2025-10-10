@@ -64,22 +64,26 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
             {displayPosts.map((post) => (
-              <motion.div key={post.slug} variants={itemVariants}>
-                <Link className="group block" href={`/blog/${post.slug}`} onClick={playPop}>
-                  <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full">
+              <motion.div key={post.slug} variants={itemVariants} className="h-full">
+                <Link className="group block h-full" href={`/blog/${post.slug}`} onClick={playPop}>
+                  <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
                     {/* Thumbnail */}
-                    {post.image && (
-                      <div className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700">
+                    <div className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0">
+                      {post.image ? (
                         <img
                           alt={post.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           src={post.image}
                         />
-                      </div>
-                    )}
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600">
+                          <span className="text-4xl">📝</span>
+                        </div>
+                      )}
+                    </div>
 
                     {/* Content */}
-                    <div className="p-6">
+                    <div className="p-6 flex flex-col flex-grow">
                       {/* Meta */}
                       <div className="flex items-center gap-4 mb-3 text-sm text-gray-600 dark:text-gray-400">
                         <div className="flex items-center gap-1">
@@ -99,12 +103,12 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
                       </div>
 
                       {/* Title */}
-                      <h3 className="font-sans text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
+                      <h3 className="font-sans text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors line-clamp-2">
                         {post.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3">
+                      <p className="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3 mt-auto">
                         {post.description}
                       </p>
                     </div>
