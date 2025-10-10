@@ -188,10 +188,9 @@ export default function RootLayout({
               logo: {
                 "@type": "ImageObject",
                 url: "https://neezar.tech/logo.svg",
-                width: "512",
-                height: "512",
+                width: "600",
+                height: "600",
               },
-              image: "https://neezar.tech/images/neezar.jpg",
               description:
                 "Web Developer Probolinggo - Fullstack Developer spesialis Next.js, React, TypeScript",
               sameAs: [
@@ -202,6 +201,7 @@ export default function RootLayout({
               founder: {
                 "@type": "Person",
                 name: "Neezar Abdurrahman Ahnaf Abiyyi",
+                image: "https://neezar.tech/images/neezar.jpg",
               },
             }),
           }}
