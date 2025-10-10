@@ -167,6 +167,42 @@ export default function RootLayout({
                 name: "Neezar Abdurrahman Ahnaf Abiyyi",
               },
               inLanguage: "id-ID",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://neezar.tech/blog?search={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+          type="application/ld+json"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://neezar.tech/#organization",
+              name: "Neezar Abd",
+              alternateName: "Neezar Abdurrahman",
+              url: "https://neezar.tech",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://neezar.tech/logo.svg",
+                width: "512",
+                height: "512",
+              },
+              image: "https://neezar.tech/images/neezar.jpg",
+              description:
+                "Web Developer Probolinggo - Fullstack Developer spesialis Next.js, React, TypeScript",
+              sameAs: [
+                "https://github.com/neezar-abd",
+                "https://instagram.com/neezarabd",
+                "https://linkedin.com/in/neezarabd",
+              ],
+              founder: {
+                "@type": "Person",
+                name: "Neezar Abdurrahman Ahnaf Abiyyi",
+              },
             }),
           }}
           type="application/ld+json"
