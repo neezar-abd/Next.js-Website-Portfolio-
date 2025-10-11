@@ -6,10 +6,9 @@
  */
 
 import type { Metadata } from "next";
-import { getAllPosts } from "@/lib/mdx";
-import { getPostBySlugMDX } from "@/lib/mdx-remote";
+import { getAllPosts, getPostBySlug } from "@/lib/mdx";
 import { PostHeader } from "../_components/PostHeader";
-import { PostContentMDX } from "../_components/PostContentMDX";
+import { PostContent } from "../_components/PostContent";
 import { PostNavigation } from "../_components/PostNavigation";
 import { ReadingProgress } from "../_components/ReadingProgress";
 import { TableOfContents } from "../_components/TableOfContents";
@@ -27,7 +26,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getPostBySlugMDX(slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     return { title: "Artikel Tidak Ditemukan" };
@@ -53,7 +52,7 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await getPostBySlugMDX(slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     return (
@@ -102,7 +101,7 @@ export default async function BlogPostPage({
               breadcrumb={["Blog", post.category || "Artikel"]}
             />
 
-            <PostContentMDX mdxSource={post.mdxSource} />
+            <PostContent html={post.html} />
 
             <PostNavigation relatedPosts={relatedPosts} />
           </main>

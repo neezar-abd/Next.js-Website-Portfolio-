@@ -8,19 +8,13 @@ image: "/images/journey-smkn1probolinggo.jpg"
 author: "Neezar"
 ---
 
-<BlogImageCarousel
-  images={[
-    {
-      src: "/images/journey-smkn1probolinggo.jpg",
-      alt: "Foto bersama siswa SMKN 1 Probolinggo",
-      caption: "Kebersamaan dengan teman-teman kelas Axioo Class Program RPL"
-    },
-    {
-      src: "/images/journey-smkn1probolinggo1.jpg",
-      alt: "Kegiatan pembelajaran di SMKN 1 Probolinggo",
-      caption: "Suasana belajar coding di lab komputer"
-    }
-  ]}
+import Image from "next/image"
+
+<Image
+  src="/blog/journey-smkn1probolinggo.jpg"
+  alt="Foto bersama siswa SMKN 1 Probolinggo"
+  width={1200}
+  height={700}
 />
 
 # Perjalanan Saya Memulai Karier Developer di SMKN 1 Probolinggo
