@@ -69,19 +69,7 @@ export function PostHeader({
         </div>
       </div>
 
-      {/* Cover Image - Fixed aspect ratio, no layout shift */}
-      {image && (
-        <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 max-h-[65vh]">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover"
-            priority={false}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1400px"
-          />
-        </div>
-      )}
+      {/* Cover Image removed - using carousel in content instead */}
     </header>
   );
 }
