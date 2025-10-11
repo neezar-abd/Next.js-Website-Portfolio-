@@ -237,6 +237,15 @@ export const testimonials = [
       "https://ui-avatars.com/api/?name=Ahmad+Dzaki&background=3b82f6&color=fff&size=200",
   },
   {
+    name: "Mahdi Aryasatya Ganesha Putra",
+    role: "Classmate",
+    company: "SMKN 1 Probolinggo - RPL",
+    content:
+      "Asikin aja brayyy 😎😎😎",
+    image:
+      "https://ui-avatars.com/api/?name=Mahdi+Aryasatya&background=3b82f6&color=fff&size=200",
+  },
+  {
     name: "Firman Ibnu Shobirin",
     role: "Classmate",
     company: "SMKN 1 Probolinggo - RPL",
