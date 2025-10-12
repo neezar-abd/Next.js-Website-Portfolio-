@@ -38,7 +38,7 @@ export const ProjectSection = () => {
       title: "Soalin - AI Quiz Generator",
       description:
         "Platform AI-powered untuk generate quiz interaktif dengan machine learning dan auto-grading system.",
-      image: "/project/Soalin-AI-Quiz.png",
+      image: "/project/Soalin-AI-Quiz.webp",
       tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "AI/ML"],
       link: "/project",
     },
@@ -46,7 +46,7 @@ export const ProjectSection = () => {
       title: "Portfolio Website - Neezar",
       description:
         "Portfolio website personal dengan design modern, dark mode, animasi Framer Motion, dan Firebase integration.",
-      image: "/project/website-portfolio.png",
+      image: "/project/website-portfolio.webp",
       tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Firebase"],
       link: "/project",
     },
@@ -54,7 +54,7 @@ export const ProjectSection = () => {
       title: "Hello World - First Project",
       description:
         "Project pertama dalam perjalanan belajar web development dengan HTML, CSS, dan JavaScript vanilla.",
-      image: "/project/Hello-world.png",
+      image: "/project/Hello-world.webp",
       tech: ["HTML", "CSS", "JavaScript"],
       link: "/project",
     },

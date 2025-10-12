@@ -39,7 +39,7 @@ const allProjects = [
     title: "Soalin - AI Quiz Generator",
     description:
       "Platform AI-powered untuk generate quiz interaktif dengan teknologi machine learning. Mendukung multiple choice, essay, dan true/false questions dengan auto-grading system.",
-    image: "/project/Soalin-AI-Quiz.png",
+    image: "/project/Soalin-AI-Quiz.webp",
     tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "AI/ML"],
     demoUrl: "https://soalin.vercel.app",
     githubUrl: "https://github.com/neezar-abd/soalin",
@@ -49,7 +49,7 @@ const allProjects = [
     title: "Portfolio Website - Neezar",
     description:
       "Portfolio website personal dengan design modern dan clean. Dilengkapi dengan dark mode, animasi smooth menggunakan Framer Motion, Firebase integration untuk guestbook dan contact form.",
-    image: "/project/website-portfolio.png",
+    image: "/project/website-portfolio.webp",
     tags: [
       "Next.js",
       "TypeScript",
@@ -65,7 +65,7 @@ const allProjects = [
     title: "Hello World - First Project",
     description:
       "Project pertama saya dalam perjalanan belajar web development. Simple landing page dengan HTML, CSS, dan JavaScript vanilla untuk memahami fundamental web development.",
-    image: "/project/Hello-world.png",
+    image: "/project/Hello-world.webp",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "#",
     githubUrl: "https://github.com/neezar-abd/hello-world",

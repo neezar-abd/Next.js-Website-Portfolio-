@@ -60,7 +60,7 @@ export const AboutSection = () => {
                   priority
                   alt="Neezar Abdurrahman"
                   className="object-cover"
-                  src="/images/neezar.jpg"
+                  src="/images/neezar.webp"
                 />
               </div>
             </motion.div>

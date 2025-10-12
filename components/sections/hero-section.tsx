@@ -105,7 +105,7 @@ export const HeroSection = () => {
                     priority
                     alt={personalInfo.name}
                     className="object-cover"
-                    src="/images/neezar.jpg"
+                    src="/images/neezar.webp"
                   />
                 </div>
               </div>

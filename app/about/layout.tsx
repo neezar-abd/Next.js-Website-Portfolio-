@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://neezar.tech/about",
     images: [
       {
-        url: "https://neezar.tech/images/neezar.jpg",
+        url: "https://neezar.tech/images/neezar.webp",
         width: 1200,
         height: 630,
         alt: "Neezar Abdurrahman - Web Developer Probolinggo",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "About Neezar Abd - Web Developer Probolinggo",
     description:
       "Siswa SMKN 1 Probolinggo passionate di web development. Fullstack Developer spesialis Next.js, React, TypeScript.",
-    images: ["https://neezar.tech/images/neezar.jpg"],
+    images: ["https://neezar.tech/images/neezar.webp"],
   },
   alternates: {
     canonical: "https://neezar.tech/about",

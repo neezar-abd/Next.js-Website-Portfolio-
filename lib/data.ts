@@ -131,7 +131,7 @@ export const certifications = [
     description:
       "Intensive coding bootcamp focusing on modern web development technologies and best practices.",
     skills: ["Web Development", "Programming Fundamentals", "Problem Solving"],
-    certificate: "/sertifikat/codingcamp.png",
+    certificate: "/sertifikat/codingcamp.webp",
   },
   {
     title: "LearningX x Axioo Program",
@@ -141,7 +141,7 @@ export const certifications = [
     description:
       "Specialized training program collaboration between LearningX and Axioo for software engineering students.",
     skills: ["Software Engineering", "Industry Practices", "Technical Skills"],
-    certificate: "/sertifikat/learningx.png",
+    certificate: "/sertifikat/learningx.webp",
   },
   {
     title: "Broadcasting & Multimedia",
@@ -156,7 +156,7 @@ export const certifications = [
       "Multimedia Production",
       "Content Creation",
     ],
-    certificate: "/sertifikat/broadcasting.png",
+    certificate: "/sertifikat/broadcasting.webp",
   },
 ];
 

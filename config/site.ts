@@ -28,7 +28,7 @@ export const siteConfig = {
   },
   creator: "Neezar Abdurrahman",
   siteUrl: "https://neezar.tech",
-  ogImage: "https://neezar.tech/images/neezar.jpg",
+  ogImage: "https://neezar.tech/images/neezar.webp",
   twitterHandle: "@neezarabd",
   navItems: [
     {

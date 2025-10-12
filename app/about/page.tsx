@@ -66,7 +66,7 @@ export default function AboutPage() {
       description:
         "Memulai pendidikan di jurusan Rekayasa Perangkat Lunak (RPL) dengan program Kelas Industri Axioo Class Program.",
       icon: "🎓",
-      logo: "/logos/LogoRPL.png",
+      logo: "/logos/LogoRPL.webp",
     },
     {
       year: "2024",
@@ -74,7 +74,7 @@ export default function AboutPage() {
       description:
         "Bergabung dengan OSIS SMKN 1 Probolinggo sebagai anggota bidang Publikasi dan Dokumentasi, fokus pada videography, photography, dan content creation.",
       icon: "📸",
-      logo: "/logos/Logo OSIS.png",
+      logo: "/logos/Logo OSIS.webp",
     },
     {
       year: "2024",
@@ -82,7 +82,7 @@ export default function AboutPage() {
       description:
         "Mengikuti program pelatihan kolaborasi LearningX Indonesia dengan Axioo untuk pengembangan skill software engineering.",
       icon: "🚀",
-      logo: "/logos/logolearningx.png",
+      logo: "/logos/logolearningx.webp",
     },
     {
       year: "2024",
@@ -90,7 +90,7 @@ export default function AboutPage() {
       description:
         "Mendapatkan sertifikasi Broadcasting & Multimedia dari Dinas Pendidikan dan Kebudayaan untuk skill videography dan content production.",
       icon: "🎬",
-      logo: "/logos/logo-broadcasting.jpeg",
+      logo: "/logos/logo-broadcasting.webp",
     },
     {
       year: "2024",
@@ -98,7 +98,7 @@ export default function AboutPage() {
       description:
         "Mengembangkan personal project AI Quiz Generator menggunakan Next.js, TypeScript, Tailwind CSS, dan Supabase dengan AI integration.",
       icon: "💻",
-      logo: "/project/Soalin-AI-Quiz.png",
+      logo: "/project/Soalin-AI-Quiz.webp",
     },
     {
       year: "2025",
@@ -106,7 +106,7 @@ export default function AboutPage() {
       description:
         "Menyelesaikan bootcamp web development dari Indosat Ooredoo Hutchison, memperdalam skill frontend dan backend development.",
       icon: "🏕️",
-      logo: "/logos/logoidcamp.png",
+      logo: "/logos/logoidcamp.webp",
     },
     {
       year: "2025",
@@ -114,7 +114,7 @@ export default function AboutPage() {
       description:
         "Mengikuti intensive coding bootcamp dari DBS Foundation, fokus pada modern web development technologies dan best practices.",
       icon: "⚡",
-      logo: "/logos/logodicoding.jpeg",
+      logo: "/logos/logodicoding.webp",
     },
     {
       year: "Present",
@@ -122,7 +122,7 @@ export default function AboutPage() {
       description:
         "Saat ini aktif sebagai siswa Axioo Class Program di SMKN 1 Probolinggo, terus belajar dan mengembangkan skill hingga lulus.",
       icon: "🎯",
-      logo: "/logos/logo-acp.png",
+      logo: "/logos/logo-acp.webp",
     },
   ];
 
@@ -181,11 +181,11 @@ export default function AboutPage() {
     let logo = "";
 
     if (exp.type === "education") {
-      logo = "/logos/logo-acp.png"; // Axioo Class Program
+      logo = "/logos/logo-acp.webp"; // Axioo Class Program
     } else if (exp.type === "organization") {
-      logo = "/logos/Logo OSIS.png"; // OSIS
+      logo = "/logos/Logo OSIS.webp"; // OSIS
     } else if (exp.type === "project") {
-      logo = "/project/Soalin-AI-Quiz.png"; // AI Quiz Project
+      logo = "/project/Soalin-AI-Quiz.webp"; // AI Quiz Project
     }
 
     return {
@@ -233,7 +233,7 @@ export default function AboutPage() {
               <img
                 alt="Neezar Abdurrahman"
                 className="w-32 h-32 rounded-full mx-auto border-4 border-gray-200 dark:border-gray-700 object-cover"
-                src="/images/neezar.jpg"
+                src="/images/neezar.webp"
               />
             </motion.div>
             <motion.h1

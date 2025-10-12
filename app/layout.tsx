@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Neezar Abd Portfolio",
     images: [
       {
-        url: "https://neezar.tech/images/neezar.jpg",
+        url: "https://neezar.tech/images/neezar.webp",
         width: 1200,
         height: 630,
         alt: "Neezar Abdurrahman - Web Developer Probolinggo",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio Neezar Abdurrahman - Fullstack Developer spesialis Next.js, React, TypeScript dari Probolinggo",
     creator: "@neezarabd",
-    images: ["https://neezar.tech/images/neezar.jpg"],
+    images: ["https://neezar.tech/images/neezar.webp"],
   },
   robots: {
     index: true,
@@ -120,7 +120,7 @@ export default function RootLayout({
               name: "Neezar Abdurrahman Ahnaf Abiyyi",
               alternateName: "Neezar Abd",
               url: "https://neezar.tech",
-              image: "https://neezar.tech/images/neezar.jpg",
+              image: "https://neezar.tech/images/neezar.webp",
               sameAs: [
                 "https://github.com/neezar",
                 "https://instagram.com/neezarabd",
@@ -201,7 +201,7 @@ export default function RootLayout({
               founder: {
                 "@type": "Person",
                 name: "Neezar Abdurrahman Ahnaf Abiyyi",
-                image: "https://neezar.tech/images/neezar.jpg",
+                image: "https://neezar.tech/images/neezar.webp",
               },
             }),
           }}
