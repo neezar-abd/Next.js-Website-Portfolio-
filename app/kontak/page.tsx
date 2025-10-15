@@ -24,8 +24,8 @@ export default function KontakPage() {
     {
       icon: Mail,
       label: "Email",
-      value: "neezar.dev@gmail.com",
-      href: "mailto:neezar.dev@gmail.com",
+      value: "neezar.tech@gmail.com",
+      href: "mailto:neezar.tech@gmail.com",
       color: "text-blue-600 dark:text-blue-400",
     },
     {

@@ -23,7 +23,7 @@ export const siteConfig = {
   ],
   author: {
     name: "Neezar Abdurrahman Ahnaf Abiyyi",
-    email: "neezarabdurrahman@gmail.com",
+    email: "neezar.tech@gmail.com",
     url: "https://neezar.tech",
   },
   creator: "Neezar Abdurrahman",
