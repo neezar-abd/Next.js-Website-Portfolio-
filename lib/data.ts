@@ -5,7 +5,7 @@ export const personalInfo = {
   title: "Web Developer",
   tagline: "Fullstack Developer & Creative Visual Storyteller",
   location: "Kota Probolinggo, Indonesia",
-  email: "neezar.dev@gmail.com",
+  email: "neezar.tech@gmail.com",
   phone: "+6283899200333",
   whatsapp: "https://wa.me/6283899200333",
 
