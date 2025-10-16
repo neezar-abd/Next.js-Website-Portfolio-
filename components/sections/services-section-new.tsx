@@ -25,7 +25,7 @@ const techIcons = [
 
 export const ServicesSectionNew = () => {
   return (
-    <section className="relative min-h-screen flex items-center py-20 px-4 bg-gray-100 dark:bg-gray-900">
+    <section className="relative min-h-screen flex items-center py-20 px-4 bg-gray-100 dark:bg-gray-900 overflow-hidden">
       <div className="container mx-auto max-w-7xl w-full">
         {/* Section Header */}
         <motion.div
@@ -48,13 +48,13 @@ export const ServicesSectionNew = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Icon Cloud */}
           <motion.div
-            className="relative"
+            className="relative overflow-hidden"
             initial={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            <div className="relative w-full h-[500px] flex items-center justify-center">
+            <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
               <IconCloud images={techIcons} />
             </div>
           </motion.div>

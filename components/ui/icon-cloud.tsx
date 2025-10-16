@@ -322,7 +322,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
     <canvas
       ref={canvasRef}
       aria-label="Interactive 3D Icon Cloud"
-      className="rounded-lg"
+      className="rounded-lg w-full max-w-[400px] h-auto mx-auto"
       height={400}
       role="img"
       width={400}

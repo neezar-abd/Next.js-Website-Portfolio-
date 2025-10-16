@@ -210,14 +210,14 @@ export default function RootLayout({
       </head>
       <body
         className={clsx(
-          "min-h-screen text-foreground bg-background font-sans antialiased",
+          "min-h-screen text-foreground bg-background font-sans antialiased overflow-x-hidden",
           fontSans.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col min-h-screen">
+          <div className="relative flex flex-col min-h-screen overflow-x-hidden">
             <Navbar />
-            <main className="flex-grow">{children}</main>
+            <main className="flex-grow overflow-x-hidden">{children}</main>
             <Footer />
           </div>
         </Providers>
