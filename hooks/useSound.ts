@@ -8,7 +8,7 @@ export const useSound = (soundFile: string = "/assets/audio/pop.mp3") => {
   useEffect(() => {
     // Create audio element on mount
     audioRef.current = new Audio(soundFile);
-    audioRef.current.volume = 0.3; // Set volume to 30%
+    audioRef.current.volume = 0.7; // Set volume to 70%
 
     return () => {
       // Cleanup on unmount
