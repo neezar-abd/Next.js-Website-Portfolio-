@@ -22,6 +22,9 @@ export const Footer = () => {
       { name: "Guestbook", href: "/guestbook" },
       { name: "Kontak", href: "/kontak" },
     ],
+    services: [
+      { name: "Layanan Web Development", href: "/layanan" },
+    ],
     social: [
       { name: "GitHub", icon: Github, href: personalInfo.social.github },
       {
@@ -64,6 +67,20 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
+            <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+              <ul className="space-y-2">
+                {navigation.services.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      className="font-sans text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                      href={item.href}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Social & Contact */}

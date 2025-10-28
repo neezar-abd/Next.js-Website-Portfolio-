@@ -182,9 +182,18 @@ export const siteConfig = {
 
 ## 📚 Documentation
 
-- **[DEVELOPER-GUIDE.md](./DEVELOPER-GUIDE.md)** - Complete development guide
-- **[PUBLIC-ASSETS-GUIDE.md](./PUBLIC-ASSETS-GUIDE.md)** - Asset organization guide
-- **[PERFORMANCE-OPTIMIZATION.md](./PERFORMANCE-OPTIMIZATION.md)** - Performance tips and checklist
+📖 **[DOKUMENTASI-LENGKAP.md](./DOKUMENTASI-LENGKAP.md)** - Dokumentasi lengkap dan komprehensif dalam satu file
+
+Dokumentasi mencakup:
+- Quick Start & Installation
+- Struktur Proyek Detail
+- Panduan Pengembangan
+- Manajemen Konten (Blog, Projects, Assets)
+- Optimasi Performa
+- SEO & Marketing Strategy
+- Deployment ke Vercel
+- Troubleshooting
+- Changelog & Contributing Guide
 
 ## 🚢 Deployment
 

@@ -246,6 +246,29 @@ export default function KontakPage() {
                 cepat.
               </p>
             </motion.div>
+
+            {/* Services CTA */}
+            <motion.div
+              animate={{ opacity: 1, y: 0 }}
+              className="p-4 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200 dark:border-blue-700 rounded-xl"
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <h3 className="font-sans text-base font-bold text-gray-900 dark:text-white mb-2">
+                Butuh Website untuk Bisnis?
+              </h3>
+              <p className="font-sans text-sm text-gray-600 dark:text-gray-300 mb-3">
+                Saya menyediakan jasa pembuatan website profesional untuk UMKM & bisnis di Probolinggo.
+              </p>
+              <Link href="/layanan">
+                <Button
+                  className="w-full font-sans bg-blue-600 hover:bg-blue-700 text-white"
+                  size="sm"
+                >
+                  Lihat Layanan & Harga
+                </Button>
+              </Link>
+            </motion.div>
           </motion.div>
 
           {/* Right Side - Contact Form */}
