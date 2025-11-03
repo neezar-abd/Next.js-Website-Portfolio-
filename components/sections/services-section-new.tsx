@@ -562,7 +562,7 @@ export const ServicesSectionNew = () => {
                     Need Something Custom?
                   </h3>
                   <p className="font-sans text-sm text-gray-600 dark:text-gray-400 mb-4 sm:mb-5 leading-relaxed">
-                    Have a unique project in mind? Let's discuss how I can help bring your ideas to life.
+                    Have a unique project in mind? Let&apos;s discuss how I can help bring your ideas to life.
                   </p>
                 </div>
 
@@ -574,7 +574,7 @@ export const ServicesSectionNew = () => {
                   href="/kontak"
                   size="sm"
                 >
-                  Let's Talk
+                  Let&apos;s Talk
                 </Button>
               </div>
             </motion.div>
