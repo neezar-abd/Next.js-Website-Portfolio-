@@ -31,7 +31,7 @@ export const CTASection = () => {
 
   return (
     <section className="relative py-24 px-4 bg-white dark:bg-gray-950">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-6xl">
         <motion.div
           className="text-center"
           initial="hidden"

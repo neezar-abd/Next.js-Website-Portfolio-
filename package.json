@@ -62,7 +62,7 @@
     "cobe": "^0.6.5",
     "embla-carousel-react": "^8.6.0",
     "firebase": "^12.3.0",
-    "framer-motion": "11.18.2",
+    "framer-motion": "^11.18.2",
     "gray-matter": "^4.0.3",
     "intl-messageformat": "10.7.16",
     "lucide-react": "^0.544.0",

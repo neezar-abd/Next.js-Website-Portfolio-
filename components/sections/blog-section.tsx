@@ -50,12 +50,12 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
           viewport={{ once: true, margin: "-100px" }}
           whileInView="visible"
         >
-          {/* Section Header */}
-          <motion.div className="text-center mb-16" variants={itemVariants}>
+          {/* Section Header - Left Aligned */}
+          <motion.div className="mb-16" variants={itemVariants}>
             <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Latest Articles
             </h2>
-            <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
               Berbagi pengalaman dan pengetahuan seputar web development dan
               video production
             </p>

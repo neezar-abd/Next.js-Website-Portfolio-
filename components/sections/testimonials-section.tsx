@@ -6,10 +6,6 @@ import { Quote } from "lucide-react";
 import { Marquee } from "@/components/ui/marquee";
 import { testimonials } from "@/lib/data";
 
-// Split testimonials into two rows
-const firstRow = testimonials.slice(0, Math.ceil(testimonials.length / 2));
-const secondRow = testimonials.slice(Math.ceil(testimonials.length / 2));
-
 function TestimonialCard({
   name,
   role,
@@ -46,10 +42,10 @@ function TestimonialCard({
 
 export const TestimonialsSection = () => {
   return (
-    <section className="relative py-20 px-4 bg-gray-100 dark:bg-gray-900 overflow-hidden">
-      <div className="container mx-auto max-w-7xl">
+    <section className="relative py-20 px-4 bg-white dark:bg-gray-950 overflow-hidden">
+      <div className="container mx-auto max-w-6xl">
         <motion.div
-          className="text-center mb-12"
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
@@ -58,25 +54,20 @@ export const TestimonialsSection = () => {
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Testimonials
           </h2>
-          <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
             Apa kata mereka tentang hasil kerja sama kita
           </p>
         </motion.div>
 
         <div className="relative flex flex-col gap-4 w-full">
-          <Marquee pauseOnHover className="[--duration:25s]">
-            {firstRow.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
-            ))}
-          </Marquee>
-          <Marquee pauseOnHover reverse className="[--duration:25s]">
-            {secondRow.map((testimonial, index) => (
+          <Marquee pauseOnHover className="[--duration:40s]">
+            {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}
           </Marquee>
           {/* Gradient overlays */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-gray-50 dark:from-gray-900" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-gray-50 dark:from-gray-900" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-white dark:from-gray-950" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-white dark:from-gray-950" />
         </div>
       </div>
     </section>
