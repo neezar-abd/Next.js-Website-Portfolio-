@@ -1,15 +1,14 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { Code, Sparkles, Layout, Video, ArrowRight, Lightbulb, ChevronRight } from "lucide-react";
+import { Code, Sparkles, Layout, Video, ArrowRight, Lightbulb } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 export const ServicesSectionNew = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [activeCard, setActiveCard] = useState(0);
-  const [showSwipeHint, setShowSwipeHint] = useState(true);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -33,15 +32,6 @@ export const ServicesSectionNew = () => {
       },
     },
   };
-
-  // Hide swipe hint after 3 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSwipeHint(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   // Intersection Observer to track active card
   useEffect(() => {
@@ -180,24 +170,6 @@ export const ServicesSectionNew = () => {
               From concept to launch, I deliver solutions that solve real business problems
             </p>
           </motion.div>
-
-          {/* Swipe Hint - Mobile Only */}
-          <AnimatePresence>
-            {showSwipeHint && (
-              <motion.div
-                animate={{ opacity: 1 }}
-                className="flex sm:hidden items-center justify-center gap-2 mb-4 px-4"
-                exit={{ opacity: 0 }}
-                initial={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  Swipe to explore
-                </span>
-                <ChevronRight className="w-4 h-4 text-gray-500 dark:text-gray-400 animate-pulse" />
-              </motion.div>
-            )}
-          </AnimatePresence>
 
           {/* Mobile: Horizontal Scroll Carousel */}
           <div className="sm:hidden relative">
