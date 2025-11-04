@@ -36,6 +36,7 @@ const techStackOptions = [
 const allProjects = [
   {
     id: 1,
+    slug: "soalin-ai-quiz",
     title: "Soalin - AI Quiz Generator",
     description:
       "Platform AI-powered untuk generate quiz interaktif dengan teknologi machine learning. Mendukung multiple choice, essay, dan true/false questions dengan auto-grading system.",
@@ -46,6 +47,7 @@ const allProjects = [
   },
   {
     id: 2,
+    slug: "website-portfolio",
     title: "Portfolio Website - Neezar",
     description:
       "Portfolio website personal dengan design modern dan clean. Dilengkapi dengan dark mode, animasi smooth menggunakan Framer Motion, Firebase integration untuk guestbook dan contact form.",
@@ -62,6 +64,7 @@ const allProjects = [
   },
   {
     id: 3,
+    slug: "hello-world",
     title: "Hello World - First Project",
     description:
       "Project pertama saya dalam perjalanan belajar web development. Simple landing page dengan HTML, CSS, dan JavaScript vanilla untuk memahami fundamental web development.",
@@ -317,7 +320,7 @@ export default function ProjectPage() {
                       transition={{ duration: 0.3 }}
                       variants={itemVariants}
                     >
-                      <Link className="block" href={`/project/${project.id}`}>
+                      <Link className="block" href={`/project/${project.slug}`}>
                         <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full flex flex-col">
                           {/* Thumbnail Image 16:9 */}
                           <div className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700">
