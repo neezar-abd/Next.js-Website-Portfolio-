@@ -1,11 +1,14 @@
-# Portfolio Website - Neezar Abdurrahman
+# 🚀 Portfolio Website - Neezar Abdurrahman
 
-> Modern, performant portfolio website built with Next.js 15, HeroUI, and Tailwind CSS
+> Modern, high-performance portfolio website built with Next.js 15, HeroUI, and Tailwind CSS
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.3.1-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.11-38bdf8?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![HeroUI](https://img.shields.io/badge/HeroUI-v2-7c3aed?style=flat-square)](https://heroui.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+
+**🌐 Live Site:** [neezar.tech](https://neezar.tech)
 
 ## ✨ Features
 
@@ -48,89 +51,56 @@ next-app-template/
 │   └── kontak/             # Contact form
 │
 ├── components/             # React components
-│   ├── blog/               # Blog-specific components
+│   ├── blog/               # Blog-specific
 │   ├── common/             # Shared components
-│   ├── layout/             # Navbar, footer, etc.
-│   ├── sections/           # Page sections (hero, about, etc.)
-│   └── ui/                 # UI primitives (buttons, cards)
+│   ├── layout/             # Navbar, footer
+│   ├── sections/           # Page sections
+│   └── ui/                 # UI primitives
 │
 ├── content/blog/           # MDX blog posts
-├── hooks/                  # Custom React hooks
-├── lib/                    # Utilities and data
-├── config/                 # Configuration files
-├── public/                 # Static assets
-│   ├── assets/             # Audio, documents
-│   ├── images/             # Photos and images
-│   ├── logos/              # Company/org logos
-│   ├── project/            # Project screenshots
-│   └── sertifikat/         # Certificates
-└── styles/                 # Global styles
+├── lib/                    # Utilities & data
+├── config/                 # Configuration
+└── public/                 # Static assets
+    ├── assets/             # Audio, documents
+    ├── images/             # Photos
+    ├── logos/              # Company logos
+    └── project/            # Project screenshots
 ```
 
-## 🚀 Getting Started
+**📖 [Full Structure Guide](./DOCUMENTATION.md#struktur-proyek)**
 
-### Prerequisites
-- Node.js 18+ and npm
-- Git
-- Firebase account (for guestbook/contact features)
+## 🚀 Quick Start
 
-### Installation
-
-1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd next-app-template
-```
+# Clone repository
+git clone https://github.com/neezar-abd/Next.js-Website-Portfolio-.git
+cd Next.js-Website-Portfolio-
 
-2. **Install dependencies**
-```bash
+# Install dependencies
 npm install
-# or
-yarn install
-# or
-pnpm install
-```
 
-3. **Set up environment variables**
-```bash
+# Setup environment variables
 cp .env.example .env.local
-```
+# Edit .env.local with your Firebase credentials
 
-Edit `.env.local` with your Firebase credentials:
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-```
-
-4. **Run the development server**
-```bash
+# Run development server
 npm run dev
+
+# Open http://localhost:3000
 ```
 
-5. **Open your browser**
-Visit [http://localhost:3000](http://localhost:3000)
-
-### Build for Production
-
-```bash
-npm run build
-npm run start
-```
+**📖 [Full Setup Guide](./DOCUMENTATION.md#quick-start)**
 
 ## 📝 Content Management
 
 ### Adding Blog Posts
 
-Create a new `.mdx` file in `content/blog/`:
+Create `.mdx` file in `content/blog/`:
 
 ```mdx
 ---
 title: "Your Post Title"
-publishedAt: "2025-10-09"
+publishedAt: "2025-11-04"
 summary: "Brief description"
 image: "/images/post-cover.jpg"
 ---
@@ -140,116 +110,86 @@ Your content here with **Markdown** support!
 
 ### Updating Personal Data
 
-Edit `lib/data.ts` to update:
+Edit `lib/data.ts` for:
 - Personal information
 - Projects
 - Skills
-- Work experience
 - Certifications
 
-### Managing Assets
+**📖 [Content Management Guide](./DOCUMENTATION.md#manajemen-konten)**
 
-See [PUBLIC-ASSETS-GUIDE.md](./PUBLIC-ASSETS-GUIDE.md) for detailed asset organization.
 
-## 🎨 Customization
-
-### Theme Colors
-
-Edit `tailwind.config.js` to customize colors:
-```js
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: {...},  // Your brand color
-      },
-    },
-  },
-};
-```
-
-### Site Configuration
-
-Edit `config/site.ts`:
-```ts
-export const siteConfig = {
-  name: "Your Name",
-  description: "Your tagline",
-  navItems: [...],
-  links: {...},
-};
-```
 
 ## 📚 Documentation
 
-- **[DEVELOPER-GUIDE.md](./DEVELOPER-GUIDE.md)** - Complete development guide
-- **[PUBLIC-ASSETS-GUIDE.md](./PUBLIC-ASSETS-GUIDE.md)** - Asset organization guide
-- **[PERFORMANCE-OPTIMIZATION.md](./PERFORMANCE-OPTIMIZATION.md)** - Performance tips and checklist
+**📖 [Read Complete Documentation](./DOCUMENTATION.md)** - Comprehensive guide covering:
+- Quick Start & Installation
+- Project Structure & Development
+- Content Management (Blog, Projects, Data)
+- SEO & Performance Optimization
+- Deployment & Troubleshooting
+- Contributing Guidelines
+
+**Other Docs:**
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - How to contribute
+- [CHANGELOG.md](./CHANGELOG.md) - Version history
 
 ## 🚢 Deployment
 
-### Deploy to Vercel (Recommended)
+### Quick Deploy to Vercel
 
-1. Push your code to GitHub
+1. Push code to GitHub
 2. Visit [vercel.com](https://vercel.com)
-3. Import your repository
-4. Add environment variables (Firebase keys)
-5. Deploy!
+3. Import repository
+4. Add environment variables
+5. Deploy! 🚀
 
-Vercel automatically:
-- Builds your app
-- Optimizes images
-- Serves from global CDN
-- Provides automatic HTTPS
-
-### Other Platforms
-- **Netlify**: Similar to Vercel, great for static sites
-- **Railway**: Good for full-stack apps with databases
-- **Self-hosted**: Build and deploy to any Node.js server
+**📖 [Full Deployment Guide](./DOCUMENTATION.md#deployment)**
 
 ## 📊 Performance
 
-Current Lighthouse scores:
-- ⚡ Performance: 95+
-- ♿ Accessibility: 95+
-- ✅ Best Practices: 95+
-- 🔍 SEO: 100
+Lighthouse scores:
+- ⚡ Performance: **95+**
+- ♿ Accessibility: **95+**
+- ✅ Best Practices: **95+**
+- 🔍 SEO: **100**
 
-See [PERFORMANCE-OPTIMIZATION.md](./PERFORMANCE-OPTIMIZATION.md) for optimization details.
+**📖 [Performance Guide](./DOCUMENTATION.md#seo--optimasi)**
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Contributions welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+Quick steps:
+1. Fork & clone repository
+2. Create feature branch
+3. Make your changes
+4. Submit Pull Request
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
+## � Support
 
-- [HeroUI](https://heroui.com/) - UI component library
-- [Next.js](https://nextjs.org/) - React framework
-- [Vercel](https://vercel.com/) - Deployment platform
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- 📖 [Complete Documentation](./DOCUMENTATION.md)
+- 🐛 [Report Issues](https://github.com/neezar-abd/Next.js-Website-Portfolio-/issues)
+- 💬 [Discussions](https://github.com/neezar-abd/Next.js-Website-Portfolio-/discussions)
 
-## 📞 Support
+## 🙏 Credits
 
-Need help? Check:
-- [Developer Guide](./DEVELOPER-GUIDE.md)
-- [GitHub Issues](https://github.com/your-repo/issues)
-- [Next.js Documentation](https://nextjs.org/docs)
+Built with: [Next.js](https://nextjs.org/) • [HeroUI](https://heroui.com/) • [Tailwind CSS](https://tailwindcss.com/) • [Vercel](https://vercel.com/)
 
 ---
 
-**Built with ❤️ by Neezar Abdurrahman**
+<div align="center">
 
-[Portfolio](https://yoursite.com) • [GitHub](https://github.com/yourusername) • [LinkedIn](https://linkedin.com/in/yourusername)
+**Built with ❤️ by [Neezar Abdurrahman](https://neezar.tech)**
 
-## License
+[Website](https://neezar.tech) • [GitHub](https://github.com/neezar-abd) • [LinkedIn](https://linkedin.com/in/neezarabd)
 
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+</div>
+
+## 📄 License
+
+Licensed under the [MIT License](./LICENSE).
