@@ -63,23 +63,37 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
 
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
-            {displayPosts.map((post) => (
-              <motion.div key={post.slug} variants={itemVariants} className="h-full">
-                <Link className="group block h-full" href={`/blog/${post.slug}`} onClick={playPop}>
-                  <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
-                    {/* Thumbnail */}
-                    <div className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0">
-                      {post.image ? (
-                        <img
-                          alt={post.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                          src={post.image}
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600">
-                          <span className="text-4xl">📝</span>
-                        </div>
-                      )}
+            {displayPosts.map((post) => {
+              // Support both single image and images array
+              const coverImage =
+                post.image ||
+                (post.images && post.images.length > 0 ? post.images[0] : null);
+
+              return (
+                <motion.div
+                  key={post.slug}
+                  className="h-full"
+                  variants={itemVariants}
+                >
+                  <Link
+                    className="group block h-full"
+                    href={`/blog/${post.slug}`}
+                    onClick={playPop}
+                  >
+                    <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
+                      {/* Thumbnail */}
+                      <div className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0">
+                        {coverImage ? (
+                          <img
+                            alt={post.title}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src={coverImage}
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600">
+                            <span className="text-4xl">📝</span>
+                          </div>
+                        )}
                     </div>
 
                     {/* Content */}
@@ -115,7 +129,8 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
                   </div>
                 </Link>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
 
           {/* View All CTA */}
