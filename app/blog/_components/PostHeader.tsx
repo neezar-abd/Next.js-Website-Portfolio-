@@ -6,8 +6,8 @@
  */
 
 import { Calendar, Clock } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+
 import { ImageGallery } from "./ImageGallery";
 
 interface PostHeaderProps {
@@ -36,11 +36,8 @@ export function PostHeader({
   });
 
   // Gabungkan image tunggal dengan images array
-  const allImages = images && images.length > 0 
-    ? images 
-    : image 
-      ? [image] 
-      : [];
+  const allImages =
+    images && images.length > 0 ? images : image ? [image] : [];
 
   return (
     <header className="mb-8 space-y-6">
