@@ -43,6 +43,14 @@ export const ProjectSection = () => {
       link: "/project/nezar-ai",
     },
     {
+      title: "Kopi Nusantara - Coffee Shop Landing",
+      description:
+        "Landing page modern untuk coffee shop dengan desain aesthetic dan animasi smooth. Menampilkan menu, lokasi, dan brand identity yang kuat untuk bisnis kopi lokal.",
+      image: "/project/kopi-nusantara.png",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
+      link: "/project/kopi-nusantara",
+    },
+    {
       title: "Villa Nusantara - Booking Platform",
       description:
         "Platform booking villa modern dengan fitur pencarian, filter, dan reservasi online. UI/UX yang clean dan responsive untuk pengalaman booking yang seamless.",

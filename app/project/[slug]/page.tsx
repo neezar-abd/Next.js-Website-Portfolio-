@@ -215,6 +215,119 @@ const projectsData: Record<string, ProjectDetail> = {
       version: "1.0.0",
     },
   },
+  "kopi-nusantara": {
+    title: "Kopi Nusantara - Coffee Shop Landing Page",
+    subtitle: "Landing page modern untuk coffee shop dengan desain aesthetic dan animasi smooth",
+    description:
+      "Kopi Nusantara adalah landing page premium untuk coffee shop yang menggabungkan desain visual yang menarik dengan user experience yang seamless. Website ini menampilkan brand identity yang kuat, menu interaktif, dan informasi lengkap tentang coffee shop dengan animasi smooth yang memukau.",
+    image: "/project/kopi-nusantara.png",
+    images: ["/project/kopi-nusantara.png"],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
+    stackReasoning:
+      "Next.js dipilih untuk performa optimal dan SEO yang excellent untuk bisnis lokal. TypeScript untuk type safety dan maintainability. Tailwind CSS untuk rapid styling dengan design system yang konsisten. Framer Motion untuk animasi smooth yang meningkatkan user engagement. Vercel untuk deployment yang cepat dan reliable.",
+    role: "Full-Stack Developer & Designer",
+    roleDetails: [
+      "Designed dan developed complete landing page dari konsep hingga production",
+      "Created visual identity dan brand elements yang cohesive",
+      "Implemented smooth scroll animations dan micro-interactions dengan Framer Motion",
+      "Built responsive design yang optimal di semua device sizes",
+      "Optimized performance dan SEO untuk discoverability bisnis lokal",
+      "Deployed ke Vercel dengan custom domain setup",
+    ],
+    features: [
+      "Hero section dengan animasi parallax yang eye-catching",
+      "Menu showcase dengan layout yang elegant dan informatif",
+      "About section yang menceritakan brand story",
+      "Location section dengan integrasi maps",
+      "Smooth scroll navigation antar sections",
+      "Mobile-first responsive design",
+      "Dark/light aesthetic yang sesuai dengan coffee shop vibe",
+      "Performance optimized dengan fast loading times",
+    ],
+    impact:
+      "Landing page yang professional dan aesthetic untuk meningkatkan brand presence coffee shop secara digital dan menarik lebih banyak pelanggan.",
+    impactMetrics: [
+      {
+        label: "Page Speed",
+        value: "Fast",
+        description: "Optimized performance",
+      },
+      {
+        label: "Mobile Ready",
+        value: "100%",
+        description: "Fully responsive",
+      },
+      { label: "Animations", value: "Smooth", description: "Framer Motion powered" },
+      { label: "SEO", value: "Optimized", description: "Local business ready" },
+    ],
+    links: {
+      live: "https://kopi-nusantara-two.vercel.app/",
+      github: "https://github.com/neezar-abd/Kopi-Nusantara",
+    },
+    timeline: "Oktober - November 2024",
+    problem:
+      "Coffee shop membutuhkan digital presence yang professional untuk meningkatkan brand awareness dan menarik pelanggan baru. Website harus mencerminkan kualitas dan atmosphere dari coffee shop itu sendiri.",
+    solution:
+      "Membangun landing page dengan desain premium yang menggabungkan visual aesthetic dengan functionality. Animasi smooth dan layout yang intuitive menciptakan pengalaman browsing yang menyenangkan dan memorable.",
+    technicalApproach: [
+      {
+        title: "Next.js dengan App Router",
+        description:
+          "Menggunakan Next.js terbaru untuk optimal performance, automatic code splitting, dan excellent SEO yang penting untuk bisnis lokal.",
+      },
+      {
+        title: "Framer Motion Animations",
+        description:
+          "Implementasi animasi yang halus dan professional menggunakan Framer Motion - dari scroll animations hingga hover effects yang meningkatkan user engagement.",
+      },
+      {
+        title: "Tailwind CSS Design System",
+        description:
+          "Built consistent design system dengan Tailwind CSS untuk styling yang rapid dan maintainable. Custom color palette yang match dengan coffee shop branding.",
+      },
+      {
+        title: "Performance Optimization",
+        description:
+          "Image optimization dengan Next.js Image, lazy loading, dan code splitting untuk ensure fast loading times meskipun dengan banyak visual elements.",
+      },
+    ],
+    challenges: [
+      {
+        challenge: "Balancing visual richness dengan performance",
+        solution:
+          "Implemented progressive loading untuk images, optimized animation performance dengan will-change properties, dan careful asset management untuk maintain fast load times.",
+      },
+      {
+        challenge: "Creating cohesive brand identity",
+        solution:
+          "Developed comprehensive design language dengan consistent typography, color palette, dan visual elements yang reflect coffee shop atmosphere throughout the entire site.",
+      },
+    ],
+    results: [
+      "Successfully launched professional coffee shop landing page",
+      "Smooth animations yang meningkatkan user engagement",
+      "Fast loading times meskipun dengan rich visual content",
+      "Mobile-responsive design yang works perfect di semua devices",
+      "SEO-optimized untuk local business discoverability",
+    ],
+    learnings: [
+      "Animation timing dan easing sangat affect perceived quality",
+      "Consistent branding elements create professional impression",
+      "Performance dan visual richness can coexist dengan proper optimization",
+      "Mobile experience harus diprioritaskan untuk bisnis lokal",
+    ],
+    metadata: {
+      status: "Active",
+      teamSize: "Solo Developer",
+      version: "1.0.0",
+    },
+  },
   "soalin-ai-quiz": {
     title: "Soalin - AI Quiz Generator for SMK Students",
     subtitle: "Full-stack AI-powered platform untuk personalized learning dengan adaptive algorithm",
