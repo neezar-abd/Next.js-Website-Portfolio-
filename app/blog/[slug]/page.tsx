@@ -97,6 +97,7 @@ export default async function BlogPostPage({
               date={post.date}
               readingTime={post.readingTime}
               image={post.image}
+              images={post.images}
               author={post.author}
               breadcrumb={["Blog", post.category || "Artikel"]}
             />

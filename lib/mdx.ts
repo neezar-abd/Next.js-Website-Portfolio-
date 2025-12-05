@@ -19,6 +19,7 @@ export type PostFrontmatter = {
   tags?: string[];
   category?: string;
   image?: string;
+  images?: string[]; // Multiple images for gallery
   author?: string;
 };
 
@@ -78,6 +79,7 @@ export async function getPostBySlug(
     tags: fm.tags ?? [],
     category: fm.category ?? "General",
     image: fm.image,
+    images: fm.images ?? [],
     author: fm.author,
     readingTime: `${Math.max(1, Math.round(stats.minutes))} min`,
   };
@@ -106,6 +108,7 @@ export async function getAllPosts(): Promise<PostSummary[]> {
       tags: fm.tags ?? [],
       category: fm.category ?? "General",
       image: fm.image,
+      images: fm.images ?? [],
       author: fm.author,
       readingTime: `${Math.max(1, Math.round(stats.minutes))} min`,
     } as PostSummary;

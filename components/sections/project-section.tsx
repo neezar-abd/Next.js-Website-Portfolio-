@@ -35,20 +35,28 @@ export const ProjectSection = () => {
 
   const projects = [
     {
-      title: "Soalin - AI Quiz Generator",
+      title: "NezarAI - AI Chatbot",
       description:
-        "As the first Designer on the team, I worked on a workflow management product for marketing and creative teams, contributing across product strategy, interface design, and marketing. This helped drive a threefold increase in monthly active users within 9 months.",
-      image: "/project/Soalin-AI-Quiz.webp",
-      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "AI/ML"],
-      link: "/project/soalin-ai-quiz-generator",
+        "AI Chatbot personal yang dibangun dengan teknologi terkini. Platform chat berbasis AI yang dapat membantu menjawab berbagai pertanyaan dengan respons yang cepat dan akurat.",
+      image: "/project/nezarai-interface.jpg",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI/ML", "Vercel"],
+      link: "/project/nezar-ai",
     },
     {
-      title: "Portfolio Website",
+      title: "Villa Nusantara - Booking Platform",
       description:
-        "Building a modern personal portfolio website with seamless dark mode, smooth animations using Framer Motion, and real-time data integration with Firebase for dynamic content management.",
-      image: "/project/website-portfolio.webp",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Firebase"],
-      link: "/project/portfolio-website-neezar",
+        "Platform booking villa modern dengan fitur pencarian, filter, dan reservasi online. UI/UX yang clean dan responsive untuk pengalaman booking yang seamless.",
+      image: "/project/Villa-nusantara.png",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+      link: "/project/villa-nusantara",
+    },
+    {
+      title: "Soalin - AI Quiz Generator",
+      description:
+        "Platform AI-powered untuk generate quiz interaktif dengan teknologi machine learning. Mendukung multiple choice, essay, dan true/false questions dengan auto-grading system.",
+      image: "/project/Soalin-AI-Quiz.webp",
+      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "AI/ML"],
+      link: "/project/soalin-ai-quiz",
     },
   ];
 

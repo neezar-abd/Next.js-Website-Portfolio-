@@ -208,7 +208,11 @@ export default function BlogListSearch({ posts }: BlogListSearchProps) {
               initial={{ opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              {displayedPosts.map((post, index) => (
+              {displayedPosts.map((post, index) => {
+                // Support both single image and images array
+                const coverImage = post.image || (post.images && post.images.length > 0 ? post.images[0] : null);
+                
+                return (
                 <motion.article
                   key={post.slug}
                   animate={{ opacity: 1, y: 0 }}
@@ -216,11 +220,11 @@ export default function BlogListSearch({ posts }: BlogListSearchProps) {
                   initial={{ opacity: 0, y: 30 }}
                   transition={{ duration: 0.6, delay: 0.1 * index }}
                 >
-                  {post.image && (
+                  {coverImage && (
                     <img
                       alt={post.title}
                       className="w-full h-44 object-cover"
-                      src={post.image}
+                      src={coverImage}
                     />
                   )}
                   <div className="p-5">
@@ -260,7 +264,8 @@ export default function BlogListSearch({ posts }: BlogListSearchProps) {
                     ) : null}
                   </div>
                 </motion.article>
-              ))}
+                );
+              })}
             </motion.div>
 
             {/* Load More Button */}

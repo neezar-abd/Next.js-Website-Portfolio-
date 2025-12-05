@@ -19,6 +19,202 @@ export const dynamic = "force-dynamic";
 
 // Project data - Complete case study format
 const projectsData: Record<string, ProjectDetail> = {
+  "nezar-ai": {
+    title: "NezarAI - Personal AI Chatbot",
+    subtitle: "AI Chatbot berbasis web dengan teknologi terkini untuk interaksi cerdas",
+    description:
+      "NezarAI adalah personal AI chatbot yang dibangun dengan Next.js dan integrasi AI model untuk memberikan pengalaman chat yang natural dan informatif. Platform ini dirancang untuk membantu menjawab berbagai pertanyaan dengan respons yang cepat, akurat, dan kontekstual.",
+    image: "/project/nezarai-interface.jpg",
+    images: [
+      "/project/nezarai-interface.jpg",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "AI Integration", "Vercel"],
+    stackReasoning:
+      "Next.js dipilih untuk performa optimal dengan Server Components dan streaming responses yang essential untuk AI chat. TypeScript untuk type safety dan developer experience. Tailwind CSS untuk rapid UI development dengan design system yang konsisten. AI integration untuk natural language processing. Vercel untuk deployment yang seamless dengan edge functions support.",
+    role: "Full-Stack Developer",
+    roleDetails: [
+      "Architected dan developed complete AI chatbot application dari scratch",
+      "Integrated AI model dengan prompt engineering untuk respons yang natural",
+      "Built responsive chat interface dengan real-time streaming responses",
+      "Implemented conversation history dan context management",
+      "Optimized performance untuk fast response times",
+      "Deployed ke production dengan Vercel",
+    ],
+    features: [
+      "Real-time AI chat dengan streaming responses",
+      "Natural language processing untuk conversational experience",
+      "Clean dan intuitive chat interface",
+      "Mobile-responsive design",
+      "Dark mode support",
+      "Fast response times dengan edge deployment",
+      "Conversation context awareness",
+    ],
+    impact: "Personal AI assistant yang dapat membantu menjawab berbagai pertanyaan dan memberikan informasi dengan cepat.",
+    impactMetrics: [
+      { label: "Response Time", value: "<2s", description: "Average AI response" },
+      { label: "Uptime", value: "99%+", description: "Service availability" },
+      { label: "UI/UX", value: "Clean", description: "Intuitive interface" },
+      { label: "Mobile Ready", value: "100%", description: "Fully responsive" },
+    ],
+    links: {
+      live: "https://www.neezar.my.id/",
+      github: "https://github.com/neezar-abd/NezarAI",
+    },
+    timeline: "November - Desember 2024",
+    problem:
+      "Kebutuhan akan personal AI assistant yang dapat diakses kapan saja untuk membantu menjawab pertanyaan, memberikan informasi, dan assist dalam berbagai task sehari-hari.",
+    solution:
+      "Membangun AI chatbot personal dengan teknologi modern yang memberikan respons cepat dan akurat. Interface yang clean dan user-friendly memastikan pengalaman chat yang seamless.",
+    technicalApproach: [
+      {
+        title: "Next.js dengan App Router",
+        description:
+          "Menggunakan Next.js terbaru dengan App Router untuk optimal performance, Server Components untuk streaming AI responses, dan edge runtime untuk low latency.",
+      },
+      {
+        title: "AI Integration",
+        description:
+          "Integrasi dengan AI model menggunakan proper prompt engineering untuk menghasilkan respons yang natural, kontekstual, dan informatif.",
+      },
+      {
+        title: "Real-time Streaming",
+        description:
+          "Implementasi streaming responses untuk memberikan feedback instan kepada user tanpa harus menunggu seluruh respons selesai di-generate.",
+      },
+      {
+        title: "Responsive UI Design",
+        description:
+          "Chat interface yang dioptimasi untuk semua device sizes dengan Tailwind CSS, smooth animations, dan accessible design patterns.",
+      },
+    ],
+    challenges: [
+      {
+        challenge: "Optimizing AI response latency",
+        solution:
+          "Implemented streaming responses dan edge deployment untuk minimize latency. Responses mulai muncul dalam hitungan detik sambil AI masih generating.",
+      },
+      {
+        challenge: "Creating natural conversation flow",
+        solution:
+          "Crafted comprehensive system prompts dan implemented context management untuk maintain conversation continuity dan natural dialogue.",
+      },
+    ],
+    results: [
+      "Successfully deployed AI chatbot dengan sub-2-second response times",
+      "Clean, intuitive UI yang works seamlessly di desktop dan mobile",
+      "Reliable service dengan high uptime",
+      "Positive user feedback untuk conversation quality",
+    ],
+    learnings: [
+      "Prompt engineering sangat crucial untuk AI response quality - small changes make big differences",
+      "Streaming responses dramatically improve perceived performance",
+      "Edge deployment essential untuk global low-latency access",
+      "Simple, clean UI often provides better UX than feature-heavy interfaces",
+    ],
+    metadata: {
+      status: "Active",
+      teamSize: "Solo Developer",
+      version: "1.0.0",
+    },
+  },
+  "villa-nusantara": {
+    title: "Villa Nusantara - Booking Platform",
+    subtitle: "Platform booking villa modern dengan UI/UX yang elegant dan user-friendly",
+    description:
+      "Villa Nusantara adalah platform booking villa yang menyediakan pengalaman reservasi yang seamless. Dengan desain modern dan fitur pencarian yang powerful, platform ini memudahkan user untuk menemukan dan memesan villa impian mereka.",
+    image: "/project/Villa-nusantara.png",
+    images: [
+      "/project/Villa-nusantara.png",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    stackReasoning:
+      "Next.js untuk full-stack capabilities dengan excellent SEO support yang penting untuk platform booking. TypeScript untuk type safety di complex data structures. Tailwind CSS untuk rapid UI development dengan design yang consistent dan professional. Vercel untuk fast, reliable deployment.",
+    role: "Full-Stack Developer",
+    roleDetails: [
+      "Designed dan developed complete booking platform interface",
+      "Built villa listing dengan filtering dan search functionality",
+      "Created responsive design yang works across all devices",
+      "Implemented modern UI components dengan smooth interactions",
+      "Optimized untuk SEO dan performance",
+    ],
+    features: [
+      "Villa listing dengan detailed information",
+      "Search dan filter functionality",
+      "Responsive design untuk semua device",
+      "Clean, professional UI/UX",
+      "Fast page loads dengan Next.js optimization",
+      "SEO-optimized pages",
+      "Interactive villa galleries",
+    ],
+    impact: "Platform booking villa yang memberikan user experience yang excellent untuk menemukan dan memesan akomodasi.",
+    impactMetrics: [
+      { label: "Page Speed", value: "Fast", description: "Optimized performance" },
+      { label: "Mobile Ready", value: "100%", description: "Fully responsive" },
+      { label: "UI/UX", value: "Modern", description: "Clean design" },
+      { label: "SEO", value: "Optimized", description: "Search engine ready" },
+    ],
+    links: {
+      live: "https://villa-nusantara.vercel.app/",
+      github: "https://github.com/neezar-abd/Villa-Nusantara",
+    },
+    timeline: "November - Desember 2024",
+    problem:
+      "Kebutuhan akan platform booking villa yang modern dengan UI/UX yang excellent, memudahkan user untuk browse, search, dan menemukan villa yang sesuai dengan preferensi mereka.",
+    solution:
+      "Membangun platform booking villa dengan design modern, fitur pencarian yang intuitive, dan user experience yang seamless. Focus pada clean interface dan fast performance.",
+    technicalApproach: [
+      {
+        title: "Next.js Full-Stack",
+        description:
+          "Menggunakan Next.js untuk build complete platform dengan server-side rendering untuk SEO, API routes untuk backend logic, dan optimal performance.",
+      },
+      {
+        title: "Responsive Design System",
+        description:
+          "Implementasi design system dengan Tailwind CSS yang consistent across all pages dan responsive di semua screen sizes dari mobile hingga desktop.",
+      },
+      {
+        title: "Search & Filter System",
+        description:
+          "Built powerful search dan filtering functionality untuk membantu users menemukan villa yang sesuai dengan kriteria mereka dengan cepat.",
+      },
+      {
+        title: "Performance Optimization",
+        description:
+          "Image optimization, code splitting, dan lazy loading untuk ensure fast page loads dan smooth user experience.",
+      },
+    ],
+    challenges: [
+      {
+        challenge: "Creating intuitive search experience",
+        solution:
+          "Designed clean search interface dengan clear filters dan instant results. User dapat easily narrow down options berdasarkan location, price, dan amenities.",
+      },
+      {
+        challenge: "Optimizing image-heavy pages",
+        solution:
+          "Implemented Next.js Image component dengan lazy loading, proper sizing, dan blur placeholders untuk fast perceived loading times.",
+      },
+    ],
+    results: [
+      "Successfully launched modern villa booking platform",
+      "Clean, professional design yang appeals to target audience",
+      "Fast page loads meskipun dengan banyak images",
+      "Intuitive user flow dari browse hingga booking",
+      "Mobile-first responsive design",
+    ],
+    learnings: [
+      "Image optimization critical untuk image-heavy websites",
+      "Clear information architecture improves user experience significantly",
+      "Consistent design system speeds up development dan improves UX",
+      "SEO considerations dari awal membantu discoverability",
+    ],
+    metadata: {
+      status: "Active",
+      teamSize: "Solo Developer",
+      version: "1.0.0",
+    },
+  },
   "soalin-ai-quiz": {
     title: "Soalin - AI Quiz Generator for SMK Students",
     subtitle: "Full-stack AI-powered platform untuk personalized learning dengan adaptive algorithm",

@@ -1,18 +1,21 @@
 /**
  * PostHeader Component
- * Menampilkan breadcrumb, judul artikel, meta info, dan cover image
+ * Menampilkan breadcrumb, judul artikel, meta info, dan cover image/gallery
  * Responsif dengan tipografi yang jelas
+ * Support single image atau multiple images gallery
  */
 
 import { Calendar, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ImageGallery } from "./ImageGallery";
 
 interface PostHeaderProps {
   title: string;
   date: string;
   readingTime: string;
   image?: string;
+  images?: string[];
   author?: string;
   breadcrumb?: string[];
 }
@@ -22,6 +25,7 @@ export function PostHeader({
   date,
   readingTime,
   image,
+  images,
   author = "Neezar",
   breadcrumb = ["Blog"],
 }: PostHeaderProps) {
@@ -30,6 +34,13 @@ export function PostHeader({
     month: "long",
     day: "2-digit",
   });
+
+  // Gabungkan image tunggal dengan images array
+  const allImages = images && images.length > 0 
+    ? images 
+    : image 
+      ? [image] 
+      : [];
 
   return (
     <header className="mb-8 space-y-6">
@@ -69,18 +80,9 @@ export function PostHeader({
         </div>
       </div>
 
-      {/* Cover Image - Fixed aspect ratio, no layout shift */}
-      {image && (
-        <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 max-h-[65vh]">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover"
-            priority={false}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1400px"
-          />
-        </div>
+      {/* Image Gallery atau Single Image */}
+      {allImages.length > 0 && (
+        <ImageGallery images={allImages} title={title} />
       )}
     </header>
   );

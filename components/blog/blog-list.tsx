@@ -16,16 +16,20 @@ export default async function BlogList() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {posts.map((post) => (
+      {posts.map((post) => {
+        // Support both single image and images array
+        const coverImage = post.image || (post.images && post.images.length > 0 ? post.images[0] : null);
+        
+        return (
         <article
           key={post.slug}
           className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:shadow-lg transition-shadow"
         >
-          {post.image && (
+          {coverImage && (
             <img
               alt={post.title}
               className="w-full h-44 object-cover"
-              src={post.image}
+              src={coverImage}
             />
           )}
           <div className="p-5">
@@ -65,7 +69,8 @@ export default async function BlogList() {
             ) : null}
           </div>
         </article>
-      ))}
+        );
+      })}
     </div>
   );
 }

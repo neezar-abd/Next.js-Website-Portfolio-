@@ -36,6 +36,28 @@ const techStackOptions = [
 const allProjects = [
   {
     id: 1,
+    slug: "nezar-ai",
+    title: "NezarAI - AI Chatbot",
+    description:
+      "AI Chatbot personal yang dibangun dengan teknologi terkini. Platform chat berbasis AI yang dapat membantu menjawab berbagai pertanyaan dengan respons yang cepat dan akurat.",
+    image: "/project/nezarai-interface.jpg",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "AI/ML", "Vercel"],
+    demoUrl: "https://www.neezar.my.id/",
+    githubUrl: "https://github.com/neezar-abd/NezarAI",
+  },
+  {
+    id: 2,
+    slug: "villa-nusantara",
+    title: "Villa Nusantara - Booking Platform",
+    description:
+      "Platform booking villa modern dengan fitur pencarian, filter, dan reservasi online. UI/UX yang clean dan responsive untuk pengalaman booking yang seamless.",
+    image: "/project/Villa-nusantara.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    demoUrl: "https://villa-nusantara.vercel.app/",
+    githubUrl: "https://github.com/neezar-abd/Villa-Nusantara",
+  },
+  {
+    id: 3,
     slug: "soalin-ai-quiz",
     title: "Soalin - AI Quiz Generator",
     description:
@@ -46,7 +68,7 @@ const allProjects = [
     githubUrl: "https://github.com/neezar-abd/soalin",
   },
   {
-    id: 2,
+    id: 4,
     slug: "website-portfolio",
     title: "Portfolio Website - Neezar",
     description:
@@ -63,7 +85,7 @@ const allProjects = [
     githubUrl: "https://github.com/neezar-abd/portfolio",
   },
   {
-    id: 3,
+    id: 5,
     slug: "hello-world",
     title: "Hello World - First Project",
     description:
