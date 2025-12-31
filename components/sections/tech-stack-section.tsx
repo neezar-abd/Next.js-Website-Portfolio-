@@ -93,8 +93,8 @@ export const TechStackSection = () => {
                     </div>
                     <div className="relative py-6 md:w-[calc(100%-11rem)]">
                         <InfiniteSlider
-                            speedOnHover={20}
-                            speed={40}
+                            speedOnHover={15}
+                            speed={30}
                             gap={80}>
                             {technologies.map((tech, index) => (
                                 <div key={index} className="flex items-center gap-3 px-4">
