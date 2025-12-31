@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/sections/hero-section";
+import { TechStackSection } from "@/components/sections/tech-stack-section";
 import { ServicesSectionNew } from "@/components/sections/services-section-new";
 import { ProjectSection } from "@/components/sections/project-section";
 import { CertificationSection } from "@/components/sections/certification-section";
@@ -13,6 +14,7 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
+      <TechStackSection />
       <ServicesSectionNew />
       <ProjectSection />
       <CertificationSection />
