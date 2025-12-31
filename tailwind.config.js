@@ -1,4 +1,5 @@
-import {heroui} from "@heroui/theme"
+import { heroui } from "@heroui/theme"
+import typography from '@tailwindcss/typography'
 
 /**
  * Tailwind Configuration
@@ -65,8 +66,8 @@ const config = {
   darkMode: "class",
   plugins: [
     heroui(),
-    require('@tailwindcss/typography'),
+    typography,
   ],
 }
 
-module.exports = config;
+export default config;
