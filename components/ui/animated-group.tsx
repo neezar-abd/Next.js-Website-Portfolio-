@@ -120,7 +120,7 @@ function AnimatedGroup({
     [as]
   );
   const MotionChild = React.useMemo(
-    () => motion.create(asChild as keyof JSX.IntrinsicElements),
+    () => motion.create(asChild as string),
     [asChild]
   );
 
