@@ -38,3 +38,12 @@ pnpm-lock.yaml
 yarn.lock
 package-lock.json
 bun.lockb
+
+# Personal assets (tidak perlu di-commit)
+/public/images/neezar.webp
+/public/images/bg-*.jpg
+/public/sertifikat/
+/public/CV-README.md
+
+# Keep project screenshots (untuk portfolio showcase)
+!/public/project/

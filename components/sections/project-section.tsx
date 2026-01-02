@@ -72,7 +72,7 @@ export const ProjectSection = () => {
   const MAX_TECH_DISPLAY = 3;
 
   return (
-    <section className="relative py-20 px-4 bg-white dark:bg-gray-950">
+    <section className="relative py-20 px-4">
       <div className="container mx-auto max-w-6xl w-full">
         <motion.div
           initial="hidden"
@@ -82,7 +82,7 @@ export const ProjectSection = () => {
         >
           {/* Section Header - Left Aligned */}
           <motion.div className="mb-12" variants={itemVariants}>
-            <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
+            <h2 className="font-sans text-4xl lg:text-5xl font-medium text-gray-900 dark:text-white">
               Project
             </h2>
           </motion.div>
@@ -112,11 +112,11 @@ export const ProjectSection = () => {
                   onClick={playPop}
                 >
                   {/* Outer Container with light background */}
-                  <div className="relative bg-gray-50 dark:bg-gray-900/30 rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12">
+                  <div className="relative rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12">
                     {/* Device Frame - Smaller */}
                     <div className="relative bg-gray-900 dark:bg-gray-800 rounded-xl md:rounded-2xl p-1.5 sm:p-2 shadow-2xl max-w-2xl mx-auto">
                       {/* Screen/Image */}
-                      <div className="relative w-full aspect-video rounded-lg md:rounded-xl overflow-hidden bg-white dark:bg-gray-950">
+                      <div className="relative w-full aspect-video rounded-lg md:rounded-xl overflow-hidden">
                         <img
                           alt={project.title}
                           className="w-full h-full object-cover"
@@ -141,7 +141,7 @@ export const ProjectSection = () => {
               variant="bordered"
               onClick={playPop}
             >
-              View all projects
+              Lihat Semua Proyek
             </Button>
           </motion.div>
         </motion.div>

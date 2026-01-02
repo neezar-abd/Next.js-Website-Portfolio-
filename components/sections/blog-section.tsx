@@ -42,7 +42,7 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
   const displayPosts = posts.slice(0, 3);
 
   return (
-    <section className="relative py-20 px-4 bg-white dark:bg-gray-950">
+    <section className="relative py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial="hidden"
@@ -52,8 +52,8 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
         >
           {/* Section Header - Left Aligned */}
           <motion.div className="mb-16" variants={itemVariants}>
-            <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              Latest Articles
+            <h2 className="font-sans text-4xl lg:text-5xl font-medium text-gray-900 dark:text-white mb-4">
+              Artikel Terbaru
             </h2>
             <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
               Berbagi pengalaman dan pengetahuan seputar web development dan
@@ -80,7 +80,7 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
                     href={`/blog/${post.slug}`}
                     onClick={playPop}
                   >
-                    <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
+                    <div className="relative bg-white dark:bg-gray-800 overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col">
                       {/* Thumbnail */}
                       <div className="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0">
                         {coverImage ? (
@@ -94,41 +94,41 @@ export const BlogSection = ({ posts }: BlogSectionProps) => {
                             <span className="text-4xl">📝</span>
                           </div>
                         )}
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 flex flex-col flex-grow">
-                      {/* Meta */}
-                      <div className="flex items-center gap-4 mb-3 text-sm text-gray-600 dark:text-gray-400">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="w-4 h-4" />
-                          <span className="font-sans">
-                            {new Date(post.date).toLocaleDateString("id-ID", {
-                              year: "numeric",
-                              month: "short",
-                              day: "2-digit",
-                            })}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          <span className="font-sans">{post.readingTime}</span>
-                        </div>
                       </div>
 
-                      {/* Title */}
-                      <h3 className="font-sans text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors line-clamp-2">
-                        {post.title}
-                      </h3>
+                      {/* Content */}
+                      <div className="p-6 flex flex-col flex-grow">
+                        {/* Meta */}
+                        <div className="flex items-center gap-4 mb-3 text-sm text-gray-600 dark:text-gray-400">
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            <span className="font-sans">
+                              {new Date(post.date).toLocaleDateString("id-ID", {
+                                year: "numeric",
+                                month: "short",
+                                day: "2-digit",
+                              })}
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="w-4 h-4" />
+                            <span className="font-sans">{post.readingTime}</span>
+                          </div>
+                        </div>
 
-                      {/* Description */}
-                      <p className="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3 mt-auto">
-                        {post.description}
-                      </p>
+                        {/* Title */}
+                        <h3 className="font-sans text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors line-clamp-2">
+                          {post.title}
+                        </h3>
+
+                        {/* Description */}
+                        <p className="font-sans text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-3 mt-auto">
+                          {post.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </motion.div>
+                  </Link>
+                </motion.div>
               );
             })}
           </div>

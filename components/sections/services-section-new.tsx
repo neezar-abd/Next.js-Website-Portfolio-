@@ -14,67 +14,69 @@ export const ServicesSectionNew = () => {
     {
       id: 'service-1' as ServiceKey,
       icon: Code,
-      title: 'Web Applications That Automate Your Business',
-      description: 'I build custom web apps that automate your workflows and give you real-time business insights. From inventory systems to booking platforms and customer dashboards. Save 40-70% of manual work time.',
+      title: 'Aplikasi Web yang Mengotomatisasi Bisnis Anda',
+      description: 'Saya membangun aplikasi web kustom yang mengotomatisasi alur kerja dan memberikan insight bisnis real-time. Dari sistem inventaris hingga platform booking dan dashboard pelanggan. Hemat 40-70% waktu kerja manual.',
       image: '/charts.png',
-      alt: 'Web application dashboard',
+      alt: 'Dashboard aplikasi web',
     },
     {
       id: 'service-2' as ServiceKey,
       icon: Sparkles,
-      title: 'AI-Powered Features',
-      description: 'I integrate AI capabilities into your existing systems or build new AI-powered tools. Smart chatbots, document processors, and auto-content generators. 10x faster processing.',
+      title: 'Fitur Berbasis AI',
+      description: 'Saya mengintegrasikan kemampuan AI ke sistem yang sudah ada atau membangun tools berbasis AI baru. Chatbot pintar, pemroses dokumen, dan generator konten otomatis. Proses 10x lebih cepat.',
       image: '/music.png',
-      alt: 'AI features visualization',
+      alt: 'Visualisasi fitur AI',
     },
     {
       id: 'service-3' as ServiceKey,
       icon: Layout,
-      title: 'Landing Pages That Convert',
-      description: 'I design and develop high-converting landing pages optimized for speed and conversions. Perfect for product launches, portfolios, and lead generation. 2-3x better conversion rates.',
+      title: 'Landing Page yang Mengkonversi',
+      description: 'Saya mendesain dan mengembangkan landing page high-converting yang dioptimalkan untuk kecepatan dan konversi. Sempurna untuk peluncuran produk, portofolio, dan lead generation. Tingkat konversi 2-3x lebih baik.',
       image: '/mail2.png',
-      alt: 'Landing page design',
+      alt: 'Desain landing page',
     },
     {
       id: 'service-4' as ServiceKey,
       icon: Video,
-      title: 'Video Content Production',
-      description: 'I create professional video content from scripting to final delivery. Product demos, brand stories, and tutorials that capture attention. Boost engagement 5x.',
+      title: 'Produksi Konten Video',
+      description: 'Saya membuat konten video profesional dari scripting hingga pengiriman final. Demo produk, brand stories, dan tutorial yang menarik perhatian. Tingkatkan engagement 5x.',
       image: '/payments.png',
-      alt: 'Video production workflow',
+      alt: 'Alur kerja produksi video',
     },
   ]
 
   return (
     <section className="py-12 md:py-20 lg:py-32">
-      <div className="bg-linear-to-b absolute inset-0 -z-10 sm:inset-6 sm:rounded-b-3xl dark:block dark:to-[color-mix(in_oklab,var(--color-zinc-900)_75%,var(--color-background))]"></div>
-      <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16 lg:space-y-20 dark:[--color-border:color-mix(in_oklab,var(--color-white)_10%,transparent)]">
+
+      <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16 lg:space-y-20 dark:[--color-border:color-mix(in_oklab,var(--color-white)_10%,transparent)]">
         <div className="relative z-10 mx-auto max-w-2xl space-y-6 text-center">
-          <h2 className="text-balance text-4xl font-semibold lg:text-6xl">What I Can Build</h2>
-          <p>From concept to launch, I deliver solutions that solve real business problems and drive measurable results for your organization.</p>
+          <h2 className="text-balance text-4xl font-medium lg:text-5xl">Yang Bisa Saya Bangun</h2>
+          <p>Dari konsep hingga peluncuran, saya memberikan solusi yang memecahkan masalah bisnis nyata dan menghasilkan hasil terukur untuk organisasi Anda.</p>
         </div>
 
         <div className="grid gap-12 sm:px-12 md:grid-cols-2 lg:gap-20 lg:px-0">
-          <Accordion
-            type="single"
-            value={activeService}
-            onValueChange={(value) => setActiveService(value as ServiceKey)}
-            className="w-full">
-            {services.map((service) => {
-              const Icon = service.icon;
-              return (
-                <AccordionItem key={service.id} value={service.id}>
-                  <AccordionTrigger>
-                    <div className="flex items-center gap-2 text-base">
-                      <Icon className="size-4" />
-                      {service.title}
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>{service.description}</AccordionContent>
-                </AccordionItem>
-              );
-            })}
-          </Accordion>
+          <div className="bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 dark:border-gray-800/50 h-fit">
+            <Accordion
+              type="single"
+              value={activeService}
+              onValueChange={(value) => setActiveService(value as ServiceKey)}
+              className="w-full">
+              {services.map((service) => {
+                const Icon = service.icon;
+                return (
+                  <AccordionItem key={service.id} value={service.id}>
+                    <AccordionTrigger>
+                      <div className="flex items-center gap-2 text-base">
+                        <Icon className="size-4" />
+                        {service.title}
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent>{service.description}</AccordionContent>
+                  </AccordionItem>
+                );
+              })}
+            </Accordion>
+          </div>
 
           <div className="bg-background relative flex overflow-hidden rounded-3xl border p-2">
             <div className="w-15 absolute inset-0 right-0 ml-auto border-l bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_8px)]"></div>
@@ -103,8 +105,8 @@ export const ServicesSectionNew = () => {
               className="from-transparent via-yellow-700 to-transparent dark:via-white/50"
             />
           </div>
-        </div>
-      </div>
-    </section>
+        </div >
+      </div >
+    </section >
   )
 }

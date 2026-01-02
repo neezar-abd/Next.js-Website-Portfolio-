@@ -16,10 +16,10 @@ export const Footer = () => {
   const navigation = {
     main: [
       { name: "Beranda", href: "/" },
-      { name: "About", href: "/about" },
-      { name: "Project", href: "/project" },
+      { name: "Tentang", href: "/about" },
+      { name: "Proyek", href: "/project" },
       { name: "Blog", href: "/blog" },
-      { name: "Guestbook", href: "/guestbook" },
+      { name: "Buku Tamu", href: "/guestbook" },
       { name: "Kontak", href: "/kontak" },
     ],
     social: [
@@ -69,7 +69,7 @@ export const Footer = () => {
           {/* Social & Contact */}
           <div className="md:col-span-1">
             <h4 className="font-sans text-sm font-semibold text-gray-900 dark:text-white mb-4 uppercase tracking-wide">
-              Connect
+              Hubungi
             </h4>
             <div className="flex gap-4 mb-4">
               {navigation.social.map((item) => {
@@ -104,11 +104,11 @@ export const Footer = () => {
         <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-sans text-sm text-gray-600 dark:text-gray-400 text-center md:text-left">
-              © {currentYear || "2025"} {personalInfo.displayName}. All rights
-              reserved.
+              © {currentYear || "2025"} {personalInfo.displayName}. Hak cipta
+              dilindungi.
             </p>
             <p className="font-sans text-sm text-gray-600 dark:text-gray-400 text-center md:text-right">
-              Built with Next.js, Tailwind CSS & HeroUI
+              Dibuat dengan Next.js, Tailwind CSS & HeroUI
             </p>
           </div>
         </div>

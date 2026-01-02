@@ -30,7 +30,7 @@ export const CTASection = () => {
   };
 
   return (
-    <section className="relative py-24 px-4 bg-white dark:bg-gray-950">
+    <section className="relative py-24 px-4">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           className="text-center"
@@ -49,7 +49,7 @@ export const CTASection = () => {
 
           {/* Heading */}
           <motion.h2
-            className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4"
+            className="font-sans text-4xl lg:text-5xl font-medium text-gray-900 dark:text-white mb-4"
             variants={itemVariants}
           >
             Mari Berkolaborasi

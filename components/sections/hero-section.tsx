@@ -6,7 +6,7 @@ import { Link } from "@heroui/link";
 import Image from "next/image";
 import { Github, Instagram, Mail, ArrowRight } from "lucide-react";
 
-import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import ThemeAwareTiltedCard from "@/components/ThemeAwareTiltedCard";
 import { personalInfo } from "@/lib/data";
 import { useSound } from "@/hooks/useSound";
 
@@ -70,16 +70,8 @@ export const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden bg-white dark:bg-gray-950">
-      {/* Flickering Grid Background */}
-      <FlickeringGrid
-        className="absolute inset-0 z-0 [mask-image:radial-gradient(circle_at_center,white_20%,transparent_80%)]"
-        color="#60A5FA"
-        flickerChance={0.1}
-        gridGap={6}
-        maxOpacity={0.3}
-        squareSize={4}
-      />
+    <section className="relative flex items-center justify-center pt-24 pb-8 md:pt-32 md:pb-12 px-4 overflow-hidden">
+
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <motion.div
@@ -93,23 +85,20 @@ export const HeroSection = () => {
             className="relative flex justify-center lg:justify-end order-1 lg:order-2"
             variants={imageVariants}
           >
-            <div className="relative">
-              {/* Background decoration */}
-              <div className="absolute -inset-4 bg-gray-800 dark:bg-gray-300 rounded-full opacity-20 blur-xl" />
-
-              {/* Main image container */}
-              <div className="relative bg-white dark:bg-gray-800 rounded-full p-2 shadow-2xl">
-                <div className="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden">
-                  <Image
-                    fill
-                    priority
-                    alt={personalInfo.name}
-                    className="object-cover"
-                    src="/images/neezar.webp"
-                  />
-                </div>
-              </div>
-            </div>
+            <ThemeAwareTiltedCard
+              imageSrc="/images/bg-hitam.jpg"
+              darkImageSrc="/images/bg-putih.jpg"
+              altText={personalInfo.name}
+              captionText="Fullstack Developer"
+              containerHeight="400px"
+              containerWidth="100%"
+              imageHeight="400px"
+              imageWidth="350px"
+              scaleOnHover={1.05}
+              rotateAmplitude={12}
+              showMobileWarning={false}
+              showTooltip={true}
+            />
           </motion.div>
 
           {/* Text Content - Second on mobile, first on desktop */}
@@ -117,7 +106,7 @@ export const HeroSection = () => {
             <motion.div className="space-y-2" variants={itemVariants}>
               <motion.div variants={itemVariants}>
                 <span className="text-sm md:text-base font-medium text-blue-500 dark:text-blue-400 tracking-wider uppercase">
-                  Hi, I&apos;m
+                  Hai, saya
                 </span>
               </motion.div>
               <motion.h1

@@ -6,107 +6,107 @@ export const TechStackSection = () => {
         {
             name: 'JavaScript',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'TypeScript',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'React',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'Next.js',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-            height: 24,
+            height: 32,
             invert: true,
         },
         {
             name: 'Tailwind CSS',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-            height: 20,
+            height: 28,
         },
         {
             name: 'Node.js',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'Supabase',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'Firebase',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'PostgreSQL',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'MySQL',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
-            height: 28,
+            height: 36,
         },
         {
             name: 'MongoDB',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'GitHub',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
-            height: 24,
+            height: 32,
             invert: true,
         },
         {
             name: 'Git',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
-            height: 24,
+            height: 32,
         },
         {
             name: 'Figma',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
-            height: 20,
+            height: 28,
         },
         {
             name: 'VS Code',
             logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg',
-            height: 24,
+            height: 32,
         },
     ];
 
     return (
-        <section className="bg-white dark:bg-gray-950 overflow-hidden py-16">
-            <div className="group relative m-auto max-w-7xl px-6">
+        <section className="overflow-hidden pt-4 pb-16">
+            <div className="group relative m-auto max-w-6xl px-6">
                 <div className="flex flex-col items-center md:flex-row">
                     <div className="md:max-w-44 md:border-r md:border-gray-200 dark:md:border-gray-800 md:pr-6">
                         <p className="text-end text-sm font-sans font-medium text-gray-900 dark:text-white">
-                            Technologies & Tools I Use
+                            Teknologi & Tools yang Saya Gunakan
                         </p>
                     </div>
                     <div className="relative py-6 md:w-[calc(100%-11rem)]">
                         <InfiniteSlider
-                            speedOnHover={15}
-                            speed={30}
+                            speedOnHover={20}
+                            speed={40}
                             gap={80}>
                             {technologies.map((tech, index) => (
                                 <div key={index} className="flex items-center gap-3 px-4">
                                     <img
                                         className={`w-fit ${tech.invert ? 'dark:invert' : ''}`}
-                                        style={{ height: `${tech.height + 8}px` }}
+                                        style={{ height: `${tech.height + 4}px` }}
                                         src={tech.logo}
                                         alt={`${tech.name} Logo`}
-                                        height={tech.height + 8}
+                                        height={tech.height + 4}
                                         width="auto"
                                     />
-                                    <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap">
+                                    <span className="text-base font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap">
                                         {tech.name}
                                     </span>
                                 </div>

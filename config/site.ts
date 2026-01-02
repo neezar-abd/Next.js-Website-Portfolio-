@@ -36,11 +36,11 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "About",
+      label: "Tentang",
       href: "/about",
     },
     {
-      label: "Project",
+      label: "Proyek",
       href: "/project",
     },
     {
@@ -48,7 +48,7 @@ export const siteConfig = {
       href: "/blog",
     },
     {
-      label: "Guestbook",
+      label: "Buku Tamu",
       href: "/guestbook",
     },
     {
@@ -62,11 +62,11 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "About",
+      label: "Tentang",
       href: "/about",
     },
     {
-      label: "Project",
+      label: "Proyek",
       href: "/project",
     },
     {
@@ -74,7 +74,7 @@ export const siteConfig = {
       href: "/blog",
     },
     {
-      label: "Guestbook",
+      label: "Buku Tamu",
       href: "/guestbook",
     },
     {

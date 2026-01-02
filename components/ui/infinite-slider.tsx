@@ -79,15 +79,15 @@ export function InfiniteSlider({
 
   const hoverProps = speedOnHover
     ? {
-      onHoverStart: () => {
-        setIsTransitioning(true);
-        setCurrentSpeed(speedOnHover);
-      },
-      onHoverEnd: () => {
-        setIsTransitioning(true);
-        setCurrentSpeed(speed);
-      },
-    }
+        onHoverStart: () => {
+          setIsTransitioning(true);
+          setCurrentSpeed(speedOnHover);
+        },
+        onHoverEnd: () => {
+          setIsTransitioning(true);
+          setCurrentSpeed(speed);
+        },
+      }
     : {};
 
   return (
@@ -100,9 +100,6 @@ export function InfiniteSlider({
             : { y: translation }),
           gap: `${gap}px`,
           flexDirection: direction === 'horizontal' ? 'row' : 'column',
-          willChange: 'transform',
-          backfaceVisibility: 'hidden',
-          perspective: 1000,
         }}
         ref={ref}
         {...hoverProps}

@@ -50,20 +50,20 @@ export const TestimonialsSection = () => {
   };
 
   return (
-    <section className="relative py-20 px-4 bg-gray-50 dark:bg-gray-900/50">
+    <section className="relative py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <motion.div
-          className="mb-12 text-center"
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            What My Collaborators Say
+          <h2 className="font-sans text-4xl lg:text-5xl font-medium text-gray-900 dark:text-white mb-4">
+            Apa Kata Kolaborator Saya
           </h2>
-          <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Testimonials from developers, designers, and security specialists I've worked with
+          <p className="font-sans text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
+            Testimoni dari developer, desainer, dan spesialis keamanan yang pernah bekerja sama dengan saya
           </p>
         </motion.div>
 
