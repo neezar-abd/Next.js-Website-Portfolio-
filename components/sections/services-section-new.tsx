@@ -16,7 +16,7 @@ export const ServicesSectionNew = () => {
       icon: Code,
       title: 'Aplikasi Web yang Mengotomatisasi Bisnis Anda',
       description: 'Saya membangun aplikasi web kustom yang mengotomatisasi alur kerja dan memberikan insight bisnis real-time. Dari sistem inventaris hingga platform booking dan dashboard pelanggan. Hemat 40-70% waktu kerja manual.',
-      image: '/charts.png',
+      image: '/images/dashboard.png',
       alt: 'Dashboard aplikasi web',
     },
     {
@@ -32,7 +32,7 @@ export const ServicesSectionNew = () => {
       icon: Layout,
       title: 'Landing Page yang Mengkonversi',
       description: 'Saya mendesain dan mengembangkan landing page high-converting yang dioptimalkan untuk kecepatan dan konversi. Sempurna untuk peluncuran produk, portofolio, dan lead generation. Tingkat konversi 2-3x lebih baik.',
-      image: '/mail2.png',
+      image: '/images/landingpage.jpg',
       alt: 'Desain landing page',
     },
     {
